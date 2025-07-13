@@ -9,7 +9,7 @@ from datetime import datetime
 import random
 
 st.set_page_config(page_title="Weather Range Report Generator", layout="wide")
-st.title("📈 Weather Forecasting (Range-Based Prediction & Report)")
+st.title("📈 Weather Forecasting ")
 
 st.sidebar.header("📅 Select Date Range")
 start_year = st.sidebar.number_input("Start Year", min_value=1961, max_value=2025, value=2022)
@@ -20,7 +20,7 @@ end_month = st.sidebar.number_input("End Month", min_value=1, max_value=12, valu
 st.sidebar.header("🌦️ Input Parameters")
 humidity = st.sidebar.slider("Humidity (%)", 0, 100, 75)
 max_temp = st.sidebar.slider("Max Temperature (°C)", 10, 50, 35)
-min_temp = st.sidebar.slider("Min Temperature (°C)", 0, 40, 22)
+min_temp = st.sidebar.slider("Min Temperature (°C)", 0, 35, 20)
 sunshine = st.sidebar.slider("Sunshine (hours)", 0, 15, 7)
 cloud_coverage = st.sidebar.slider("Cloud Coverage (oktas)", 0, 100, 60)
 
